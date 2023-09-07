@@ -1,4 +1,7 @@
-﻿Console.WriteLine("Jespers övningskompendium.");
+﻿using System.Diagnostics.Metrics;
+using System;
+
+Console.WriteLine("Jespers övningskompendium.");
 
 void Övningsuppgift1()
 {
@@ -461,10 +464,82 @@ void Övningsuppgift11()
     // Skapa ett program med en array som innehåller strängarna “noll”, “ett”, “två”, “tre”,
     // “fyra”, “fem”, “sex”, “sju”, “åtta”, “nio”. Be sedan användaren att mata in en
     // siffra. Använd arrayen för att skriva ut siffrans ord. Ex.Inmatning “3” => “tre”.
+    // Extra utmaning: Användaren kan mata in en sträng med fritt antal siffror, om man
+    // skriver in t.ex 432 så svarar programmet: “fyra - tre - två”.
+
+    string inputString;
+    int outputInteger;
+
+    while (true)
+    {
+        string[] siffror = new string[10] { "noll", "ett", "två", "tre", "fyra", "fem", "sex", "sju", "åtta", "nio" };
+
+        Console.WriteLine("Skriv in en eller flera siffror mellan 0 och 9.");
+        inputString = Console.ReadLine();
+
+        for (int i = 0; i < inputString.Length; i++)
+        {
+            int siffra = int.Parse(inputString[i] + "");
+            Console.Write(siffror[siffra]);
 
 
+            if (i < siffra) //Stämmer inte, vet inte varför
+            {
+                Console.Write(" - ");
+            }
 
-} // Inte börjat.
+        }
+        Console.WriteLine();
 
+        //// Sparar input som sträng, parse genom forloop char sign in inputString
+        //foreach (char sign in inputString)
+        //{
 
-//Övningsuppgift11();
+        //    int.TryParse(inputString, out outputInteger);
+
+        //    //foreach (int digit in outputInteger)
+        //    for (int i = 0; i < outputInteger; i++)
+        //    {
+        //        Console.Write(siffror[i]);
+        //        if (outputInteger > i + 1)
+        //        {
+        //            Console.Write(" - ");
+        //        }
+        //    }
+        //    Console.WriteLine();
+        //}
+    }
+} // Arrayövning med siffror(int) till text(string), ej klar.
+
+void Övningsuppgift12() 
+{
+    // 10.
+
+    // Fråga användaren hur många tal den vill mata in. Fråga sedan efter talen i tur och
+    // ordning (“Ange tal 1:” osv). När alla tal är inmatade skriv ut dem i omvänd ordning.
+
+    Console.WriteLine("Hur många tecken vill du skriva in?");
+    int numberAmount = Convert.ToInt32(Console.ReadLine());
+    int[] numberArray = new int[numberAmount];
+
+    for (int i = 0; i < numberAmount; i++)
+    {
+        int ii = i;
+        ii++;
+        Console.WriteLine("Skriv in tal nummer: " + ii);
+        numberArray[i] = Convert.ToInt32(Console.ReadLine());
+    }
+
+    for (int j = numberArray.Length-1; j >= 0; j--)
+    {
+        Console.WriteLine(numberArray[j]);
+    }
+
+    // Denna for-loopen undertill skriver ut indexen i numberArray i "vanlig" ordning.
+    //for (int j = 0; j < numberAmount; j++)
+    //{
+    //    Console.WriteLine(numberArray[j]);
+    //}
+} // Arrayövning, inhämtar tal, sparar i arrray, skriver ut
+
+//Övningsuppgift12();

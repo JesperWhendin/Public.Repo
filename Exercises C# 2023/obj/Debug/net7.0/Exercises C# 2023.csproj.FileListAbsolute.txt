@@ -1,0 +1,14 @@
+C:\Users\Jesper Whendin\Desktop\GitHub Repos\Public.Repo\Exercises C# 2023\bin\Debug\net7.0\Exercises C# 2023.exe
+C:\Users\Jesper Whendin\Desktop\GitHub Repos\Public.Repo\Exercises C# 2023\bin\Debug\net7.0\Exercises C# 2023.deps.json
+C:\Users\Jesper Whendin\Desktop\GitHub Repos\Public.Repo\Exercises C# 2023\bin\Debug\net7.0\Exercises C# 2023.runtimeconfig.json
+C:\Users\Jesper Whendin\Desktop\GitHub Repos\Public.Repo\Exercises C# 2023\bin\Debug\net7.0\Exercises C# 2023.dll
+C:\Users\Jesper Whendin\Desktop\GitHub Repos\Public.Repo\Exercises C# 2023\bin\Debug\net7.0\Exercises C# 2023.pdb
+C:\Users\Jesper Whendin\Desktop\GitHub Repos\Public.Repo\Exercises C# 2023\obj\Debug\net7.0\Exercises C# 2023.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jesper Whendin\Desktop\GitHub Repos\Public.Repo\Exercises C# 2023\obj\Debug\net7.0\Exercises C# 2023.AssemblyInfoInputs.cache
+C:\Users\Jesper Whendin\Desktop\GitHub Repos\Public.Repo\Exercises C# 2023\obj\Debug\net7.0\Exercises C# 2023.AssemblyInfo.cs
+C:\Users\Jesper Whendin\Desktop\GitHub Repos\Public.Repo\Exercises C# 2023\obj\Debug\net7.0\Exercises C# 2023.csproj.CoreCompileInputs.cache
+C:\Users\Jesper Whendin\Desktop\GitHub Repos\Public.Repo\Exercises C# 2023\obj\Debug\net7.0\Exercises C# 2023.dll
+C:\Users\Jesper Whendin\Desktop\GitHub Repos\Public.Repo\Exercises C# 2023\obj\Debug\net7.0\refint\Exercises C# 2023.dll
+C:\Users\Jesper Whendin\Desktop\GitHub Repos\Public.Repo\Exercises C# 2023\obj\Debug\net7.0\Exercises C# 2023.pdb
+C:\Users\Jesper Whendin\Desktop\GitHub Repos\Public.Repo\Exercises C# 2023\obj\Debug\net7.0\Exercises C# 2023.genruntimeconfig.cache
+C:\Users\Jesper Whendin\Desktop\GitHub Repos\Public.Repo\Exercises C# 2023\obj\Debug\net7.0\ref\Exercises C# 2023.dll
