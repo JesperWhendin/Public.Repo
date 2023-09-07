@@ -542,4 +542,30 @@ void Övningsuppgift12()
     //}
 } // Arrayövning, inhämtar tal, sparar i arrray, skriver ut
 
-//Övningsuppgift12();
+void Övningsuppgift13()
+{
+    // 13.
+
+    // Be användaren mata in en text. Skriv sedan ut texten baklänges.
+
+    // Textens längd i tecken = längd på string 
+
+    //string testString1 = "abcde"; // 0=a, 1=b, 2=c, 3=d, 4=e
+    //Console.WriteLine(testString1[0]);
+    //Console.WriteLine(testString1[1]);
+    //Console.WriteLine(testString1[2]);
+    //Console.WriteLine(testString1[3]);
+    //Console.WriteLine(testString1[4]);
+
+    Console.WriteLine("Skriv in en text: ");
+    string inputString1 = Console.ReadLine();
+
+    for(int i = inputString1.Length-1; i >= 0; i--)
+    {
+        Console.Write(inputString1[i]);
+    }
+} // Tar in en sträng, skriver ut en baklänges.
+
+
+
+//Övningsuppgift14();
