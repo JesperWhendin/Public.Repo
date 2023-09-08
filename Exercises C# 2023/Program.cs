@@ -1,7 +1,4 @@
-﻿using System.Diagnostics.Metrics;
-using System;
-
-Console.WriteLine("Jespers övningskompendium.");
+﻿Console.WriteLine("Jespers övningskompendium.");
 
 void Övningsuppgift1()
 {
@@ -479,7 +476,7 @@ void Övningsuppgift11()
 
         for (int i = 0; i < inputString.Length; i++)
         {
-            int siffra = int.Parse(inputString[i] + "");
+            int siffra = int.Parse(inputString[i] + ""); // Detta är magi
             Console.Write(siffror[siffra]);
 
 
@@ -529,7 +526,6 @@ void Övningsuppgift12()
         Console.WriteLine("Skriv in tal nummer: " + ii);
         numberArray[i] = Convert.ToInt32(Console.ReadLine());
     }
-
     for (int j = numberArray.Length-1; j >= 0; j--)
     {
         Console.WriteLine(numberArray[j]);
@@ -550,7 +546,7 @@ void Övningsuppgift13()
 
     // Textens längd i tecken = längd på string 
 
-    //string testString1 = "abcde"; // 0=a, 1=b, 2=c, 3=d, 4=e
+    //string testString1 = "abcde"; // Index: 0=a, 1=b, 2=c, 3=d, 4=e
     //Console.WriteLine(testString1[0]);
     //Console.WriteLine(testString1[1]);
     //Console.WriteLine(testString1[2]);
@@ -564,8 +560,107 @@ void Övningsuppgift13()
     {
         Console.Write(inputString1[i]);
     }
-} // Tar in en sträng, skriver ut en baklänges.
+} // Tar in en sträng som skrivs ut baklänges.
+
+void Övningsuppgift14()
+{
+    // 14.
+
+    // Be användaren mata in en text. Skriv ut texten med alla vokaler ersatta med *.
+    // Extra utmaning: Skriv ut texten översatt till rövarspråket.
+
+    // a e i o u y å ä ö
+
+    Console.WriteLine("Skriv in en text:");
+    string inputString = Console.ReadLine();
+
+    string[] vowels = new string[9] {"a", "e", "i", "o", "u", "y", "å", "ä", "ö"};
+
+    for (int i = 0; i < inputString.Length; i++)
+    {
+        if (vowels.Contains(inputString[i]+""))
+        {
+            Console.Write("*");
+        }
+        else
+        {
+            Console.Write(inputString[i]);
+        }
+    }
+} // Tar in en sträng som skrivs ut där vokaler ersätts med "*".
+
+void Övningsuppgift15()
+{
+    // 15.
+
+    // Ett palindrom är ett ord som blir samma framlänges som baklänges. Be användaren
+    // skriva in ett ord och ange sedan om det är ett palindrom eller inte.
+
+    {
+        //1. Convert the string into an array of characters using the ToCharArray() method.
+        //2. Reverse the character array using Array.Reverse method.
+        //3. Create a new string from the reversed array.This will result in
+        //   reversing the original string.
+
+        //Console.WriteLine("Skriv ett ord: ");
+        //string inputString = Console.ReadLine();
+        //char[] reversedWordArray = inputString.ToCharArray();
+        //Array.Reverse(reversedWordArray);
+        //string reversedString = Convert.ToString(reversedWordArray) + "";
+        //Console.WriteLine(reversedString);
+
+        //Console.WriteLine("Du skrev in {0}.", inputString);
+        //Console.WriteLine("Baklänges blir det {0}", reversedWordArray+"");
+
+        //if (inputString+"" == reversedWordArray+"")
+        //{
+        //  Console.WriteLine("Palindrom");
+        //  Console.WriteLine("Ordet {0} du skrev in är ett palindrom.", inputString);
+        //  Console.WriteLine("Ordet blir {0} baklänges.", reversedWordArray);
+        //}
+    } // Array.Reverse, förstår inte, funkar inte
+
+    {
+        //Console.WriteLine("Skriv");
+        //string inputString1 = Console.ReadLine();
+        //string reverseString1 = new string(inputString1.ToCharArray().Reverse().ToArray());
+
+        //if (inputString1 == reverseString1)//(inputString1.Equals(reverseString1))
+        //{
+        //    Console.WriteLine("Du har skrivit in {0}", inputString1);
+        //    Console.WriteLine("Det är ett palindrom.");
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Du har skrivit in {0}, det är inte ett palindrom.", inputString1);
+        //}
+    } // string.ToCharArray().Reverse().ToArray(), skiljer på A och a.
+
+    //Console.WriteLine("Skriv något:");
+    //string inputString = Console.ReadLine();
+
+    //for (int i = 0; i > inputString.Length; i++)
+    //{
+    //    for (int j = inputString.Length - 1; j >= 0; j--)
+    //    {
+    //        if
+                
+    //    }
+    //}
+} // Palindrom, ej klar.
+
+void Övningsuppgift16()
+{
+    // 16.
+
+    // Gör om uppgift 6 så man kan mata in allt på en rad
+    // (första talet, operator, andra talet). Ignorera inmatade
+    // mellanslag i strängen. Om man t.ex. matar in strängen “34 - 14”,
+    // så ska programmet skriva ut “= 20”.
+
+    // Tips för mellanslagshantering: https://learn.microsoft.com/en-us/dotnet/api/system.string.replace?view=net-7.0
+
+} // Uppdatering av 6. Knappt påbörjad.
 
 
-
-//Övningsuppgift14();
+// Övningsuppgift15();
