@@ -668,7 +668,46 @@ void Övningsuppgift16()
 
     // Tips för mellanslagshantering: https://learn.microsoft.com/en-us/dotnet/api/system.string.replace?view=net-7.0
 
+
+
+
+
 } // Uppdatering av 6. Ej påbörjad.
 
+void Övningsuppgift17()
+{
+    // 17.
 
-Övningsuppgift15();
+    // Gör ett program som ber användaren mata in en text. Be sedan användaren mata in en sträng
+    // som är en del av den första texten. Skriv ut hela texten med den del man angav markerad i
+    // en annan färg. Ex. Användare matar in “abcdefghijklmnopqrstuvxyz”, och sedan “defg”.
+    // Programmet ska då skriva ut: abcdefghijklmnopqrstuvxyz
+
+
+    Console.WriteLine("Skriv");
+    string inputString1 = Console.ReadLine();
+    Console.WriteLine("Skriv lite igen");
+    string inputString2 = Console.ReadLine();
+    string outputString1 = string.Empty;
+    int loopComparer = 0;
+
+    for (int i = 0; i < inputString1.Length; i++) 
+    {
+        Console.WriteLine(i);
+        if (inputString1[i] == inputString2[loopComparer])
+        {
+            outputString1 += inputString1[i];
+            loopComparer++;
+            if (inputString2 == outputString1)
+            {
+                break;
+            }
+        }
+    }
+    Console.WriteLine(outputString1); // skall stå i inpt1 i annan färg, detta är segment 2
+    // gör for loop för segment 1
+    // gör for loop för segment 3
+}
+
+
+Övningsuppgift17();
