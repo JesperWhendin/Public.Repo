@@ -1,4 +1,4 @@
-﻿Console.WriteLine("Jespers övningskompendium.");
+﻿Console.WriteLine("Jespers övningskompendium i C# 2023.");
 
 void Övningsuppgift1()
 {
@@ -508,7 +508,7 @@ void Övningsuppgift11()
     }
 } // Arrayövning med siffror(int) till text(string), ej klar.
 
-void Övningsuppgift12() 
+void Övningsuppgift12()
 {
     // 10.
 
@@ -526,7 +526,7 @@ void Övningsuppgift12()
         Console.WriteLine("Skriv in tal nummer: " + ii);
         numberArray[i] = Convert.ToInt32(Console.ReadLine());
     }
-    for (int j = numberArray.Length-1; j >= 0; j--)
+    for (int j = numberArray.Length - 1; j >= 0; j--)
     {
         Console.WriteLine(numberArray[j]);
     }
@@ -556,7 +556,7 @@ void Övningsuppgift13()
     Console.WriteLine("Skriv in en text: ");
     string inputString1 = Console.ReadLine();
 
-    for(int i = inputString1.Length-1; i >= 0; i--)
+    for (int i = inputString1.Length - 1; i >= 0; i--)
     {
         Console.Write(inputString1[i]);
     }
@@ -574,11 +574,11 @@ void Övningsuppgift14()
     Console.WriteLine("Skriv in en text:");
     string inputString = Console.ReadLine();
 
-    string[] vowels = new string[9] {"a", "e", "i", "o", "u", "y", "å", "ä", "ö"};
+    string[] vowels = new string[9] { "a", "e", "i", "o", "u", "y", "å", "ä", "ö" };
 
     for (int i = 0; i < inputString.Length; i++)
     {
-        if (vowels.Contains(inputString[i]+""))
+        if (vowels.Contains(inputString[i] + ""))
         {
             Console.Write("*");
         }
@@ -618,7 +618,7 @@ void Övningsuppgift15()
         //  Console.WriteLine("Ordet {0} du skrev in är ett palindrom.", inputString);
         //  Console.WriteLine("Ordet blir {0} baklänges.", reversedWordArray);
         //}
-    } // Array.Reverse, förstår inte, funkar inte
+    } // Array.Reverse, förstår inte, funkar inte, rör inte, glöm
 
     {
         //Console.WriteLine("Skriv");
@@ -636,18 +636,26 @@ void Övningsuppgift15()
         //}
     } // string.ToCharArray().Reverse().ToArray(), skiljer på A och a.
 
-    //Console.WriteLine("Skriv något:");
-    //string inputString = Console.ReadLine();
+    Console.WriteLine("15. Skriv något:");
+    string inputString = Console.ReadLine();
+    string inputReversed = string.Empty;
 
-    //for (int i = 0; i > inputString.Length; i++)
-    //{
-    //    for (int j = inputString.Length - 1; j >= 0; j--)
-    //    {
-    //        if
-                
-    //    }
-    //}
-} // Palindrom, ej klar.
+    for (int i = inputString.Length - 1; i >= 0; i--)
+    {
+        inputReversed += inputString[i];
+        Console.Write(inputString[i]);
+    }
+    if (inputString == inputReversed)
+    {
+        Console.WriteLine();
+        Console.WriteLine("Du har skrivit in ett palindrom.");
+    }
+    else
+    {
+        Console.WriteLine();
+        Console.WriteLine("Du har inte skrivit in ett palindrom.");
+    }
+} // Palindrom, som 13. och jämför.
 
 void Övningsuppgift16()
 {
@@ -660,7 +668,7 @@ void Övningsuppgift16()
 
     // Tips för mellanslagshantering: https://learn.microsoft.com/en-us/dotnet/api/system.string.replace?view=net-7.0
 
-} // Uppdatering av 6. Knappt påbörjad.
+} // Uppdatering av 6. Ej påbörjad.
 
 
-// Övningsuppgift15();
+Övningsuppgift15();
