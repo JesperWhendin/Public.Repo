@@ -707,7 +707,68 @@ void Övningsuppgift17()
     Console.WriteLine(outputString1); // skall stå i inpt1 i annan färg, detta är segment 2
     // gör for loop för segment 1
     // gör for loop för segment 3
+} // Inte helt klar, fokuserade på Labb 1 som dessa delmoment är inkluderade i.
+
+void Övningsuppgift18()
+{
+    // 18.
+
+    // Be användaren mata in en mening. Skriv ut det genomsnittliga antalet bokstäver i orden.
+
+    Console.WriteLine("Skriv något cp utan siffror ditt flane:");
+    string stringput = Console.ReadLine(); //megalol
+    string[] stringArray = new string[stringput.Length];
+
+    double amountOfLetters = 0;
+    double amountOfSpaces = 0;
+    double amountOfWords = 0;
+    double meanLetterAmount = 0;
+
+    for (int i = 0;i < stringput.Length;i++)
+    {
+        if (char.IsLetter(stringput[i]))
+        {
+            amountOfLetters++;
+        }
+    }
+
+    amountOfSpaces = stringput.Length - amountOfLetters;
+    amountOfWords = amountOfSpaces + 1;
+    meanLetterAmount = amountOfLetters / amountOfWords;
+
+    Console.WriteLine($"Genomsnittliga antalet bokstäver i strängen du matat in är: {meanLetterAmount}");
+
+    for (int i = 0; i < stringArray.Length;i++)
+    {
+        Console.WriteLine(stringArray[i]);
+    }
+} // Räknar ut genomsnittliga mängden bokstäver i en mening (utan .?! eller 123... )
+
+void Övningsuppgift19()
+{
+    // 19.
+
+    // Skriv en metod DrawBox(int width, int height) När man anropar metoden
+    // ska den tömma konsolen och skriva ut en rektangel där de yttre tecknen
+    // består av ‘#’ och de inre av ‘-’ Exempel:
+
+    // DrawBox(7, 4);
+    // #######
+    // #-----#
+    // #-----#
+    // #######
+
+
+
+
+
+
 }
 
 
-Övningsuppgift17();
+
+
+
+
+Övningsuppgift18();
+Console.ReadKey();

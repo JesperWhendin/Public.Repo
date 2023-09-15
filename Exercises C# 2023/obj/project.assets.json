@@ -8,23 +8,23 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jespe\\.nuget\\packages\\": {},
+    "C:\\Users\\Jesper Whendin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jespe\\Dokument\\GitHub\\Public.Repo\\Exercises C# 2023\\Exercises C# 2023.csproj",
+      "projectUniqueName": "C:\\Users\\Jesper Whendin\\Desktop\\GitHub Repos\\Public.Repo\\Exercises C# 2023\\Exercises C# 2023.csproj",
       "projectName": "Exercises C# 2023",
-      "projectPath": "C:\\Users\\jespe\\Dokument\\GitHub\\Public.Repo\\Exercises C# 2023\\Exercises C# 2023.csproj",
-      "packagesPath": "C:\\Users\\jespe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jespe\\Dokument\\GitHub\\Public.Repo\\Exercises C# 2023\\obj\\",
+      "projectPath": "C:\\Users\\Jesper Whendin\\Desktop\\GitHub Repos\\Public.Repo\\Exercises C# 2023\\Exercises C# 2023.csproj",
+      "packagesPath": "C:\\Users\\Jesper Whendin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jesper Whendin\\Desktop\\GitHub Repos\\Public.Repo\\Exercises C# 2023\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\jespe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jesper Whendin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
